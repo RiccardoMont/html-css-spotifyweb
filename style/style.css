@@ -1,5 +1,106 @@
+/*INIZIO setup generale*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*FINE setup generale*/
+/*INIZIO root*/
+
+/*FINE root*/
+/*INIZIO utility*/
+
+.container{
+    width: 95%;
+    max-width: 1152px;
+}
+
+.row{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex{
+    display: flex;
+}
+
+
+
+.relative{
+    position: relative;
+}
+
+
+.top-150px {
+    top: 150px;
+}
+
+.left-10px{
+    left: 10px;
+}
+
+/*FINE utility*/
+
+/*INIZIO debug*/
+
+
+    /*INIZIO d-header*/
+    .debug header{
+        height: 10vh;
+        min-height: 60px;
+        width: 100%;
+        background-color: rgba(137, 43, 226, 0.562);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    /*FINE d-header*/
+    /*INIZIO d-main*/
+
+    .debug .side-menu{
+        min-width: 200px;
+        width: 200px;
+        height: 90vh;
+        background-color: blue;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 2; 
+    }
+
+    .debug .music{
+        height: 100%;
+        width: 100%;
+        position:fixed;
+        left:200px;
+        bottom: 10vh;
+        background-color: fuchsia;
+        overflow-y: auto;
+    }
+
+
+
+    /*FINE d-main*/
+    /*INIZIO d-footer*/
+    .debug footer{
+        
+        width: 100%;
+        height: 10vh;
+        min-height: 60px;
+        background-color: chartreuse;
+        position: fixed ;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+
+
+    /*FINE d-footer*/
+
+/*FINE debug*/
