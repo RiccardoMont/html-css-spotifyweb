@@ -93,6 +93,10 @@
     justify-content: center;
 }
 
+.justify-content-between{
+    justify-content: space-between;
+}
+
 .justify-content-end{
     justify-content: flex-end;
 }
@@ -208,6 +212,10 @@ a {
     padding-right: 1rem;
 }
 
+.p-y-4{
+    padding: 1rem 0;
+}
+
 /*FINE paddings*/
 /*INIZIO gaps*/
 
@@ -236,6 +244,10 @@ a {
 
 .width-150px{
     width: 150px;
+}
+
+.width-180px{
+    width: 180px;
 }
 
 .width-200px{
@@ -300,6 +312,10 @@ a {
     font-size: 20px;
 }
 
+.size-22px{
+    font-size: 22px;
+}
+
 .size-25px{
     font-size: 25px;
 }
@@ -312,12 +328,22 @@ a {
     font-weight: 700;
 }
 
+.weight-800{
+    font-weight: 800;
+}
+
 .line-height-1-5{
     line-height: 1.5;
 }
 
 .line-height-2{
     line-height: 2;
+}
+
+
+
+.text-align-center{
+    text-align: center;
 }
 
 /*FINE typography*/
@@ -400,8 +426,6 @@ header{
 .music{
     height: 90vh;
     position:fixed;
-   /* left:calc((100%/12)*1);
-    bottom: 10vh;*/
     background-color: var(--bg-music-section-lightblack);
     overflow-y: auto;
     right: 0;
@@ -418,6 +442,12 @@ header{
     list-style: none;
 }
 
+.circle{
+    width: 180px;
+    height: 180px;
+    border-radius: 91px;
+    overflow: hidden;
+}
 
 /*FINE main*/
 /*INIZIO footer*/
