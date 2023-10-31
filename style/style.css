@@ -61,10 +61,8 @@
 /*FINE root*/
 /*INIZIO utility*/
 
-.container{
-    width: 95%;
-    /*
-    max-width: 1152px;*/
+.container-music{
+    width: calc(100% - 1rem);
 }
 
 .row{
@@ -112,8 +110,8 @@
     position: relative;
 }
 
-.top-150px {
-    top: 150px;
+.top-140px {
+    top: 140px;
 }
 
 .left-10px{
@@ -139,12 +137,10 @@ a {
     height: 20px;
 }
 
-/*
-[class^=col-]{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.resize-200{
+    width: 200px;
 }
-*/
+
 /*FINE utility*/
 /*INIZIO margins*/
 
@@ -176,6 +172,10 @@ a {
     margin-bottom: 5px;
 }
 
+.margins-x-4{
+    margin: 0 -1rem;
+}
+
 
 /*FINE margins*/
 /*INIZIO paddings*/
@@ -188,8 +188,16 @@ a {
     padding-bottom: 5px;
 }
 
+.p-bot-7px{
+    padding-bottom: 7px;
+}
+
 .p-top-5px{
     padding-top: 5px;
+}
+
+.p-top-10px{
+    padding-top: 10px;
 }
 
 .p-left-4{
@@ -211,6 +219,10 @@ a {
     gap: 8px;
 }
 
+.gap-12px{
+    gap: 12px;
+}
+
 
 /*FINE gaps*/
 
@@ -226,9 +238,25 @@ a {
     width: 150px;
 }
 
+.width-200px{
+    width: 200px;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.width-hoc{
+    width: calc(100% - 200px);
+}
+
 
 /*FINE width*/
 /*INIZIO height*/
+
+.height-fit-content{
+    height: fit-content;
+}
 
 .height-65px{
     height: 65.2px;
@@ -343,7 +371,6 @@ header{
 /*INIZIO main*/
 
 .side-menu{
-    min-width: 200px;
     height: 90vh;
     background-color: var(--bg-sidemenu-black);
     position: fixed;
@@ -371,12 +398,17 @@ header{
 }
 
 .music{
-    height: 100%;
+    height: 90vh;
     position:fixed;
-    left:calc((100%/12)*1);
-    bottom: 10vh;
+   /* left:calc((100%/12)*1);
+    bottom: 10vh;*/
     background-color: var(--bg-music-section-lightblack);
     overflow-y: auto;
+    right: 0;
+}
+
+.music ul{
+    list-style: none;
 }
 
 
