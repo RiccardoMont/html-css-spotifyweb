@@ -55,6 +55,7 @@
     --bg-music-section-lightblack: #141922;
     --color-text-white: #ffffff;
     --color-text-grey: #6e6e6e;
+    --color-bars-lightgrey: #c1c1c1;
 
 }
 
@@ -63,6 +64,10 @@
 
 .container-music{
     width: calc(100% - 1rem);
+}
+
+.container-footer{
+    width: 99%;
 }
 
 .row{
@@ -97,6 +102,10 @@
     justify-content: space-between;
 }
 
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
 .justify-content-end{
     justify-content: flex-end;
 }
@@ -107,6 +116,10 @@
 
 .align-self-start{
     align-self: flex-start;
+}
+
+.align-self-center{
+    align-self: center;
 }
 
 
@@ -136,6 +149,11 @@ a {
     height: 30px;
 }
 
+.resize-40px{
+    width: 40px;
+    height: 40px;
+}
+
 .resize-20px{
     width: 20px;
     height: 20px;
@@ -143,6 +161,10 @@ a {
 
 .resize-200{
     width: 200px;
+}
+
+.resize-btn{
+    font-size: 0.75em;
 }
 
 /*FINE utility*/
@@ -192,6 +214,10 @@ a {
     padding-bottom: 5px;
 }
 
+.p-bot-4{
+    padding-bottom: 1rem;
+}
+
 .p-bot-10px{
     padding-bottom: 10px;
 }
@@ -212,12 +238,20 @@ a {
     padding-right: 1rem;
 }
 
+.p-rbl-4{
+    padding: 0 1rem 1rem 1rem;
+}
+
 .p-x-4{
     padding: 0 1rem;
 }
 
 .p-y-4{
     padding: 1rem 0;
+}
+
+.p-y-5px{
+    padding: 5px 0;
 }
 
 /*FINE paddings*/
@@ -233,6 +267,10 @@ a {
 
 .gap-12px{
     gap: 12px;
+}
+
+.gap-4{
+    gap: 1rem;
 }
 
 
@@ -266,6 +304,10 @@ a {
     width: 100%;
 }
 
+.width-50{
+    width: 50%;
+}
+
 .width-hoc{
     width: calc(100% - 200px);
 }
@@ -294,6 +336,10 @@ a {
 
 .montserrat{
     font-family: 'montserrat', sans-serif;
+}
+
+.size-8px{
+    font-size: 8px;
 }
 
 .size-10px{
@@ -471,6 +517,35 @@ footer{
     z-index: 3;
 }
 
+.circle-play{
+    padding: 5px 6px 5px 8px;
+    border: 3px solid var(--color-text-white);
+    border-radius: 17px;
+}
+
+.grey-bar{
+    width: 85%;
+    background-color: var(--color-text-grey);
+    border-radius: 2px;
+}
+
+.light-bar{
+    border: 2px solid var(--color-bars-lightgrey);
+    border-radius: 2px;
+    width: 20%;
+}
+
+.speaker-bar{
+    width: 50%;
+    background-color: var(--color-text-grey);
+    border-radius: 2px;
+}
+
+.volume-bar{
+    border: 2px solid var(--color-bars-lightgrey);
+    border-radius: 2px;
+    width: 15%;
+}
 
 /*FINE footer*/
 
