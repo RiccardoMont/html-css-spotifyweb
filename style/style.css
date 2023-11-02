@@ -386,6 +386,10 @@ header{
 
 }
 
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /*FINE header*/
 /*INIZIO main*/
 
@@ -396,6 +400,26 @@ header{
     top:0;
     left:0;
     z-index: 2; 
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.side-menu .home{
+    fill: var(--color-text-grey);
+}
+
+.side-menu .search{
+    fill: var(--color-text-grey);
+}
+
+.side-menu .libreria{
+    fill: var(--color-text-grey);
+}
+
+.side-menu .download{
+    fill: var(--color-text-grey)
 }
 
 .square {
@@ -441,6 +465,28 @@ header{
     overflow: hidden;
 }
 
+
+.side-menu ul a:hover svg{
+    fill: var(--color-text-white);
+}
+
+.side-menu ul a:hover span{
+    color: var(--color-text-white);
+}
+
+.side-menu ul a:hover .square{
+    background-color: var(--color-text-white);
+}
+
+.side-menu .user a:hover svg{
+    fill: var(--color-text-white);
+}
+
+.side-menu .user a:hover span{
+    color: var(--color-text-white);
+}
+
+
 /*FINE main*/
 /*INIZIO footer*/
 
@@ -473,6 +519,17 @@ footer{
     width: 20%;
 }
 
+.marble{
+    position: absolute;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--color-text-white);
+    border-radius: 11px;
+    top: -5px;
+    right: -6px;
+    transform: scale(0);
+}
+
 .speaker-bar{
     width: 50%;
     background-color: var(--color-text-grey);
@@ -483,6 +540,26 @@ footer{
     border: 2px solid var(--color-bars-lightgrey);
     border-radius: 2px;
     width: 15%;
+}
+
+footer .listening a:hover{
+    text-decoration: underline;
+}
+
+footer .heart a:hover .grey{
+    color: var(--color-text-white);
+}
+
+footer .commands a:hover .circle-play{
+    transform: scale(1.2);
+}
+
+footer .bar a:hover .marble{
+    transform: scale(1);
+}
+
+footer .output a:hover .marble{
+    transform: scale(1);
 }
 
 /*FINE footer*/
