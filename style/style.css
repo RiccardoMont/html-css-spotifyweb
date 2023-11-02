@@ -82,10 +82,6 @@
     display: flex;
 }
 
-.inline-flex{
-    display: inline-flex;
-}
-
 .flex-row-reverse{
     flex-direction: row-reverse;
 }
@@ -100,14 +96,6 @@
 
 .justify-content-between{
     justify-content: space-between;
-}
-
-.justify-content-evenly{
-    justify-content: space-evenly;
-}
-
-.justify-content-end{
-    justify-content: flex-end;
 }
 
 .align-items-center{
@@ -126,15 +114,6 @@
 .relative{
     position: relative;
 }
-
-.top-140px {
-    top: 140px;
-}
-
-.left-10px{
-    left: 10px;
-}
-
 
 ul{
     list-style: none;
@@ -159,16 +138,8 @@ a {
     height: 20px;
 }
 
-.resize-200{
-    width: 200px;
-}
-
 .resize-btn{
     font-size: 0.75em;
-}
-
-.resize-btn-s{
-    font-size: 0.5em;
 }
 
 /*FINE utility*/
@@ -210,16 +181,8 @@ a {
 /*FINE margins*/
 /*INIZIO paddings*/
 
-.p-4{
-    padding: 1rem;
-}
-
 .p-bot-5px{
     padding-bottom: 5px;
-}
-
-.p-bot-4{
-    padding-bottom: 1rem;
 }
 
 .p-bot-10px{
@@ -232,10 +195,6 @@ a {
 
 .p-top-16px{
     padding-top: 16px;
-}
-
-.p-left-4{
-    padding-left: 1rem;
 }
 
 .p-right-4{
@@ -285,23 +244,15 @@ a {
     gap: 1rem;
 }
 
-
 /*FINE gaps*/
-
-
-
 /*INIZIO width*/
 
 .width-100px{
     width: 100px;
 }
 
-.width-150px{
-    width: 150px;
-}
-
-.width-180px{
-    width: 180px;
+.width-120px{
+    width: 120px;
 }
 
 .max-width-180px{
@@ -314,10 +265,6 @@ a {
 
 .width-100{
     width: 100%;
-}
-
-.width-50{
-    width: 50%;
 }
 
 .width-hoc{
@@ -349,9 +296,6 @@ a {
 }
 
 /*FINE height*/
-
-
-
 /*INIZIO typography*/
 
 .montserrat{
@@ -370,28 +314,12 @@ a {
     font-size: 12px;
 }
 
-.size-14px{
-    font-size: 14px;
-}
-
-.size-16px{
-    font-size: 16px;
-}
-
-.size-18px{
-    font-size: 18px;
-}
-
 .size-20px{
     font-size: 20px;
 }
 
 .size-22px{
     font-size: 22px;
-}
-
-.size-25px{
-    font-size: 25px;
 }
 
 .weight-600{
@@ -410,15 +338,9 @@ a {
     line-height: 0.7;
 }
 
-.line-height-1-5{
-    line-height: 1.5;
-}
-
 .line-height-2{
     line-height: 2;
 }
-
-
 
 .text-align-center{
     text-align: center;
@@ -443,10 +365,6 @@ a {
     background-color: var(--color-text-grey);
 }
 /*FINE colors*/
-
-
-
-
 /*INIZIO header*/
 
 header{
@@ -460,7 +378,6 @@ header{
     z-index: 1;
 }
 
-
 .btn {
 
     padding: 8px 35px;
@@ -468,8 +385,6 @@ header{
     border: 1px solid var(--color-text-white);
 
 }
-
-
 
 /*FINE header*/
 /*INIZIO main*/
@@ -530,7 +445,6 @@ header{
 /*INIZIO footer*/
 
 footer{
-        
     width: 100%;
     height: 10vh;
     min-height: 60px;
