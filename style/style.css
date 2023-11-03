@@ -56,6 +56,7 @@
     --color-text-white: #ffffff;
     --color-text-grey: #6e6e6e;
     --color-bars-lightgrey: #c1c1c1;
+    --color-bars-green: #adff2f;
 
 }
 
@@ -115,6 +116,10 @@
     position: relative;
 }
 
+.absolute{
+    position: absolute;
+}
+
 ul{
     list-style: none;
 }
@@ -142,6 +147,10 @@ a {
     font-size: 0.75em;
 }
 
+.opacity-0{
+    opacity: 0;
+}
+
 /*FINE utility*/
 /*INIZIO margins*/
 
@@ -167,6 +176,10 @@ a {
 
 .margin-left--3px{
     margin-left: -3px;
+}
+
+.margin-left--15px{
+    margin-left: -15px;
 }
 
 .margin-bot-5px{
@@ -199,6 +212,10 @@ a {
 
 .p-right-4{
     padding-right: 1rem;
+}
+
+.p-left-15px{
+    padding-left: 15px;
 }
 
 .p-r-5px{
@@ -448,6 +465,10 @@ header{
     right: 0;
 }
 
+.filter{
+    filter: brightness(1);
+}
+
 .top-supporter{
     width: 100%;
     height: 11vh;
@@ -464,7 +485,6 @@ header{
     border-radius: 91px;
     overflow: hidden;
 }
-
 
 .side-menu ul a:hover svg{
     fill: var(--color-text-white);
@@ -486,6 +506,31 @@ header{
     color: var(--color-text-white);
 }
 
+.border-left-menu:hover{
+    box-shadow: -4px 0 var(--color-bars-green);
+}
+
+.border-bot-menu::after{
+    display: block;
+    content: "";
+    border-bottom: solid 1px var(--color-bars-green);
+    transition: all 0.5s ease-in-out 0s;
+    transform: scaleX(0);
+}
+
+.border-bot-menu:hover::after{
+    transform: scaleX(0.5);
+    
+}
+
+.music section a:hover .opacity-0{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.music section a:hover .filter{
+    filter: brightness(0.5);
+}
 
 /*FINE main*/
 /*INIZIO footer*/
@@ -558,9 +603,19 @@ footer .bar a:hover .marble{
     transform: scale(1);
 }
 
+footer .bar a:hover .light-bar{
+    border-color: var(--color-bars-green);
+}
+
 footer .output a:hover .marble{
     transform: scale(1);
 }
+
+footer .output a:hover .volume-bar{
+    border-color: var(--color-bars-green);
+}
+
+
 
 /*FINE footer*/
 
