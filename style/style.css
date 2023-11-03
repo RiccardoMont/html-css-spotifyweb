@@ -135,7 +135,6 @@ a {
 
 .resize-40px{
     width: 40px;
-    height: 40px;
 }
 
 .resize-20px{
@@ -149,6 +148,18 @@ a {
 
 .opacity-0{
     opacity: 0;
+}
+
+.top-50{
+    top: 50%;
+}
+
+.left-50{
+    left: 50%;
+}
+
+.translate-50{
+    transform: translate(-50%, -50%);
 }
 
 
@@ -237,6 +248,14 @@ a {
     padding-right: 1rem;
 }
 
+.p-right-2px{
+    padding-right: 2px;
+}
+
+.p-left-2px{
+    padding-left: 2px;
+}
+
 .p-left-15px{
     padding-left: 15px;
 }
@@ -301,6 +320,10 @@ a {
 
 .width-200px{
     width: 200px;
+}
+
+.width-60{
+    width: 60%;
 }
 
 .width-100{
@@ -641,19 +664,50 @@ footer .output a:hover .volume-bar{
 /*FINE footer*/
 /*INIZIO mediaquery*/
 
+/*INIZIO 1024px*/
 @media screen and (max-width: 1024px){
+
+    .main-menu .categories{
+        justify-content: center;
+    }
+
 
     .strip{
         flex-wrap: wrap;
     }
 
     .strip .col-2{
-        width: 180px;
+        width: 25%;
     }
     
 }
+/*FINE 1024px*/
 
+/*INIZIO 976px*/
+@media screen and (max-width: 976px){
+
+    .strip .col-2{
+        width: 33%;
+    }
+    
+}
+/*FINE 976px*/
+
+
+/*INIZIO 700px*/
+@media screen and (max-width: 700px) {
+    
+    .strip .col-2{
+        width: 50%;
+    }
+
+}
+/*FINE 700px*/
+
+/*INIZIO 480px*/
 @media screen and (max-width: 480px) {
+
+/*INIZIO main*/
 
     main .width-200px{
         width: calc(100%/12);
@@ -665,6 +719,22 @@ footer .output a:hover .volume-bar{
 
     main .p-x-4{
         padding: 0;
+    }
+
+    .strip .col-2{
+        width:50%;
+    }
+
+
+/*FINE main*/
+/*INIZIO side-menu*/
+
+    .side-menu .logo .spotify-logo--text{
+        display: none;
+    }
+
+    .side-menu .logo .opacity-0{
+        opacity: 1;
     }
 
     .side-menu .home-menu{
@@ -698,8 +768,36 @@ footer .output a:hover .volume-bar{
     .side-menu .profile span{
         display: none;
     }
-}
 
+    .side-menu .profile .avatar{
+        width: 20px;
+        height: 20px;
+    }
+
+    .side-menu .profile .resize{
+        width: 20px;
+        height: 20px;
+    }
+
+/*FINE side-menu*/
+/*INIZIO footer*/
+
+    footer .listening .resize-40px{
+        width: 40%;
+    }
+
+    footer .like .heart{
+        transform: translate(-5px, 0);
+    }
+
+    footer .like .gap-4{
+        gap: 0;
+    }
+
+/*FINE footer*/
+
+}
+/*FINE 480px*/
 
 
 
