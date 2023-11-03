@@ -638,10 +638,67 @@ footer .output a:hover .volume-bar{
     border-color: var(--color-bars-green);
 }
 
-
-
 /*FINE footer*/
+/*INIZIO mediaquery*/
 
+@media screen and (max-width: 1024px){
+
+    .strip{
+        flex-wrap: wrap;
+    }
+
+    .strip .col-2{
+        width: 180px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    main .width-200px{
+        width: calc(100%/12);
+    }
+    
+    main .width-hoc{
+        width: calc(100% - (100%/12));
+    }
+
+    main .p-x-4{
+        padding: 0;
+    }
+
+    .side-menu .home-menu{
+        align-items: center;
+    }
+
+    .side-menu .home-menu span{
+        display: none;
+    }
+
+    .side-menu h3{
+        display: none;
+    }
+
+    .side-menu .line-height-2 li{
+        display: none;
+    }
+
+    .side-menu .download{
+        justify-content: center;
+    }
+
+    .side-menu .download span{
+        display: none;
+    }
+
+    .side-menu .profile{
+        justify-content: center;
+    }
+
+    .side-menu .profile span{
+        display: none;
+    }
+}
 
 
 
